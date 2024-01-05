@@ -1,7 +1,7 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/AboutPage'
 
-const About =h2 => {
+const About = h2 => {
   return (
     <Wrapper>
         <h3>About Us</h3>
