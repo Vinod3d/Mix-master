@@ -3,6 +3,7 @@ import {About, HomeLayout, Landing, Error, Newsletter, Cocktail, SinglePageError
 
 import {loader as landingLoader} from './pages/Landing'
 import {loader as singleCocktailLoader} from './pages/Cocktail'
+import {action as newsletterActions} from './pages/Newsletter'
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'newsletter',
-        element: <Newsletter/>
+        element: <Newsletter/>,
+        action: newsletterActions,
       }
     ],
   },
